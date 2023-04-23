@@ -1,8 +1,8 @@
 ---
 # set these parameters to control the region, keypair, and AMI that are launched
-ec2_region: us-east-2
-instances_keypair: deepak2717 
-image_id: ami-03291866
+ec2_region: us-east-1
+instances_keypair: learningaws
+image_id: ami-007855ac798b5175e
 
 # security groups to be created
 security_groups:
@@ -49,6 +49,6 @@ ec2_instances:
     group: ['web', 'ssh'] 
     instance_tags: 
         Name: web
-    exact_count: 1 
+    exact_count: 2 
     count_tag: 
         Name: web
